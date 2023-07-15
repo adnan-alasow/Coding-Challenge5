@@ -82,21 +82,34 @@ console.
 4. Write a program to take an array and print average of all the elements of
 array.
 */
-
+/*
 let arrayExample = [1,2,3,4,5];
 
 let addAllnumber = 0;
 
-
-
 for(let k = 0; k < arrayExample.length; k++){
-addAllnumber = addAllnumber + arrayExample[i];
+addAllnumber = addAllnumber + arrayExample[k];
 
 }
 
 console.log(addAllnumber / arrayExample.length);
-
+*/
 // create an array with 5 numbers 
 // create a for loop to get each number in the array 
 // then add each number in the array 
 //  
+
+/*
+Write a program to output only those elements who are multiple of
+three(3) or five(5).
+*/
+
+let multiple = [49, 25, 9, 50, 88, 100];
+let output = [];
+
+for(let i = 0; i < multiple.length; i = i + 1){
+if(multiple[i] % 5 === 0 || multiple[i] % 3 === 0){
+output.push(multiple[i]);
+}
+}
+console.log(output);
